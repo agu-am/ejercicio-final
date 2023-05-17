@@ -1,0 +1,82 @@
+header {
+    height: 100vh;
+    background-image: url("../img/background-pikachu.png");
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+        "nav nav"
+        "text-left text-right";
+}
+
+header nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-area: nav;
+    grid-template-areas:
+        "logo nav";
+    padding: 8px 96px;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav figure {
+    grid-area: logo;
+    justify-content: flex-start;
+}
+
+header nav ul {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 48px;
+}
+
+header nav ul li {
+    font-size: 1rem;
+}
+
+nav figure {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav figure img {
+    width: 50px;
+}
+
+nav figure p {
+    font-size: 1.5rem;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.text-header {
+    display: unset;
+    grid-area: text-right;
+    padding: 16px 48px;
+    text-align: center;
+}
+.nav-scroll{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 3px 10px 20px #dfdfdf;
+    transition: 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+/* ----- HISTORY ----- */
+/* 
+.history-card-1 {
+
+} */

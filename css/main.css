@@ -1,0 +1,86 @@
+:root {
+    --font-kanit: 'Kanit', sans-serif;
+    --btn-color: #00c1ba;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: var(--font-kanit);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    font-family: var(--font-kanit);
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+header nav {
+    width: 100%;
+}
+header nav figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+header nav figure img {
+    width: 40px;
+}
+header nav figure p {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.menu-mobile {
+    display: inline;
+    background-image: url("../img/menu.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+}
+
+
+nav ul {
+    display: none;
+}
+
+.text-header {
+    display: none;
+}
+
+.text-header h2 {
+    margin-bottom: 24px;
+}
+
+.text-header p {
+    margin-bottom: 16px;
+}
+
+.text-header a {
+    background-color: var(--btn-color);
+    padding: 8px 16px;
+    border-radius: 35px;
+    font-size: 1rem;
+    color: white;
+}
+
+/* ---- HISTORY ---- */
+
