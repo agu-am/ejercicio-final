@@ -1,13 +1,15 @@
 header {
-    height: 100vh;
-    background-image: url("../img/background-pikachu.png");
-    background-repeat: no-repeat;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 70px 1fr;
     grid-template-areas:
         "nav nav"
         "text-left text-right";
+}
+.bg-pikachu {
+    height: 100vh;
+    background-image: url("../img/background-pikachu.png");
+    background-repeat: no-repeat;
+    display: grid;
 }
 
 header nav {
@@ -64,19 +66,70 @@ nav figure p {
     padding: 16px 48px;
     text-align: center;
 }
-.nav-scroll{
+
+.nav-scroll-white {
     background-color: #fff;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    box-shadow: 3px 10px 20px #dfdfdf;
+    box-shadow: 3px 4px 8px #dfdfdf;
     transition: 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
 /* ----- HISTORY ----- */
-/* 
+.history{
+    padding: 8px 64px;
+}
 .history-card-1 {
+    padding: 0px 48px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-left: solid 6px #12e294;
+}
+.history-card-2 {
+    padding: 0px 48px;
+    height: 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-right: solid 6px #e93456;
+}
+.history-card-3 {
+    padding: 0px 48px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-left: solid 6px #ffd641;
+}
 
-} */
+/* ----- POKEMONS ----- */
+.pokemons-search {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "search button";
+    justify-items: center;
+}
+.pokemons-search p {
+    grid-area: title;
+}
+.pokemons-search input[type="text"] {
+    grid-area: search;
+    width: 700px;
+}
+.container-pokemon {
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    justify-items: center;
+    gap: 16px;
+}

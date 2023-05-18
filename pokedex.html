@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemons</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1200px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+        rel="stylesheet">
+    <script src="./js/header.js" defer></script>
+    <script src="./js/search-pokemons.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <figure>
+                <img src="img/pokeball.svg" alt="">
+                <p>Pokedex</p>
+            </figure>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pokedex.html">Pokedex</a></li>
+                <li><a href="">My favs</a></li>
+            </ul>
+        </nav>
+        <i class="menu-mobile"></i>
+    </header>
+    <main class="pokemons">
+        <section class="pokemons-search">
+            <p>Pokemon</p>
+            <input type="text" id="inputBuscar">
+            <input type="submit" value="Search">
+        </section>
+        <section id="container-pokemon" class="container-pokemon">
+
+        </section>
+    </main>
+</body>
+
+</html>
