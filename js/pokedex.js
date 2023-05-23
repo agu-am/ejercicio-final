@@ -1,4 +1,4 @@
-const myFavs = JSON.parse(localStorage.getItem("favPokemon") || []);
+const myFavs = JSON.parse(localStorage.getItem("favPokemon")) || [];
 const allPokemon = [];
 
 function fetchPokemon(pokemonId) {
