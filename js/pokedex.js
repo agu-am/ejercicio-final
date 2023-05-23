@@ -63,7 +63,7 @@ function addFavs(idPokemon, button) {
   const pokemon = allPokemon.find(pokemon => pokemon.id === idPokemon);
   
   if (pokemon) {
-    const pokemonExists = myFavs.some(p => p.id === pokemon.id);
+    const pokemonExists = myFavs && myFavs.some(p => p.id === pokemon.id);
     if (!pokemonExists) {
       myFavs.push(pokemon);
       localStorage.setItem("favPokemon", JSON.stringify(myFavs));
