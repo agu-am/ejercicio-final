@@ -92,7 +92,8 @@ nav ul {
 }
 
 .pokemons-search p {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: normal;
 }
 
 .pokemons-search input[type="text"] {
@@ -135,13 +136,58 @@ nav ul {
 
 .card-pokemon {
     width: 200px;
-    height: 220px;
-    padding: 16px 16px;
+    height: 250px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 3px 3px #D1D1D1;
     border: solid 2px #E8E7E7;
     border-radius: 25px;
+}
+.card-pokemon figure {
+    background: radial-gradient(circle, rgba(86, 157, 143, 1) 29%, rgba(8, 148, 189, 1) 100%);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+}
+
+.card-pokemon img {
+    width: 115%;
+}
+.btnAddFav {
+    background: linear-gradient(90deg, rgba(8, 148, 189, 1) 0%, rgba(86, 157, 143, 1) 100%); 
+    border: none;
+    color: white;
+    font-weight: 700;
+    width: 120px;
+    height:40px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btnRemove {
+    background: white;
+    border: solid 2px rgba(8, 148, 189, 1);
+    color: red;
+    font-weight: 700;
+    width: 120px;
+    height:40px;
+    border-radius: 25px;
+    cursor: pointer;
+    content: "asd";
+}
+
+.card-pokemon p {
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.card-pokemon-name {
+    font-size: 1.75rem;
+    line-height: 30px;
 }
