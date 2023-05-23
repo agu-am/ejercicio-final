@@ -64,7 +64,7 @@ function addFavs(idPokemon, button) {
   
   if (pokemon) {
     const pokemonExists = myFavs && myFavs.some(p => p.id === pokemon.id);
-    if (!pokemonExists) {
+    if (!pokemonExists && myFavs !== null) {
       myFavs.push(pokemon);
       localStorage.setItem("favPokemon", JSON.stringify(myFavs));
       button.classList.add("btnRemove");
