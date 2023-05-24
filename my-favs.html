@@ -15,10 +15,22 @@
         rel="stylesheet">
     <script src="./js/header.js" defer></script>
     <script src="./js/my-favs.js" defer></script>
+    <script src="./js/menu-mobile.js" defer></script>
 </head>
 
 <body>
     <header>
+        <div class="menu-mobile">
+            <figure>
+                <img src="img/pokeball.svg" alt="">
+                <p>Pokedex</p>
+            </figure>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pokedex.html">Pokedex</a></li>
+                <li><a href="my-favs.html">My favs</a></li>
+            </ul>
+        </div>
         <nav id="nav">
             <figure>
                 <img src="img/pokeball.svg" alt="">
@@ -30,7 +42,7 @@
                 <li><a href="my-favs.html">My favs</a></li>
             </ul>
         </nav>
-        <i class="menu-mobile"></i>
+        <i class="btn-menu-mobile"></i>
     </header>
     <main class="pokemons">
         <h2 class="title-my-favs">My favorites Pokemon</h2>
