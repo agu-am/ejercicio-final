@@ -22,28 +22,31 @@ function generateCardPokemon(pokemon) {
     `;
     return cardPokemon;
 }
+
 function addFavs(idPokemon, button) {
-    const pokemon = myFavs.find(pokemon => pokemon.id === idPokemon);
-    
-    if (pokemon) {
+  const pokemon = myFavs.find(pokemon => pokemon.id === idPokemon);
+
+  if (pokemon) {
       const pokemonExists = myFavs.some(p => p.id === pokemon.id);
       if (!pokemonExists) {
-        myFavs.push(pokemon);
-        localStorage.setItem("favPokemon", JSON.stringify(myFavs));
-        button.classList.add("btnRemove");
-        button.textContent = "Remove";
-        pokemon.isFav = false;
+          myFavs.push(pokemon);
+          localStorage.setItem("favPokemon", JSON.stringify(myFavs));
+          button.classList.add("btnRemove");
+          button.textContent = "Remove";
+          pokemon.isFav = false;
       } else {
-        const index = myFavs.findIndex(p => p.id === pokemon.id);
-        myFavs.splice(index, 1);
-        localStorage.setItem("favPokemon", JSON.stringify(myFavs));
-        button.classList.remove("btnRemove");
-        button.classList.add("btnAddFav");
-        button.textContent = "Add to favs";
-        pokemon.isFav = true;
+          const index = myFavs.findIndex(p => p.id === pokemon.id);
+          myFavs.splice(index, 1);
+          localStorage.setItem("favPokemon", JSON.stringify(myFavs));
+          pokemon.isFav = true;
+          
+          const cardPokemon = button.parentNode;
+          if (cardPokemon && cardPokemon.classList.contains("card-pokemon")) {
+              cardPokemon.remove();
+          }
       }
-    }
   }
+}
 
 myFavs.map(pokemon => {
     showPokemon(pokemon)
