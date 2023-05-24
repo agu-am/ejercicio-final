@@ -203,23 +203,20 @@ nav ul {
 .menu-mobile {
     position: fixed;
     width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-    overflow:hidden ;
     background-color: rgb(255, 255, 255);
     font-family: var(--font-kanit);
     font-weight: 600;
     font-size: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     display: none;
 }
 .menu-mobile figure {
     width: 100%;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,6 +224,14 @@ nav ul {
 }
 .menu-mobile figure img {
     width: 20%;
+}
+.menu-mobile ul {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 .menu-mobile-hidden {
     display: unset;
