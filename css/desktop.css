@@ -1,6 +1,10 @@
 .menu-mobile, .btn-menu-mobile {
     display: none;
 }
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
 header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 70px 1fr;

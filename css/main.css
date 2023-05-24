@@ -115,6 +115,25 @@ nav ul {
 }
 /* ---- HISTORY ---- */
 
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.history {
+    padding: 8px;
+}
+.history-card-text-1 h3{
+    color: #12e294;
+
+}
+.history-card-text-2 h3{
+    color: #e93456;
+
+}
+.history-card-text-3 h3{
+    color: #ffd641;
+
+}
 /* ----- POKEMONS ----- */
 
 .pokemons-search {
